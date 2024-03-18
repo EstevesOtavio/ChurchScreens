@@ -1,80 +1,131 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
 body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background: url(Resources/image.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.wrapper {
-    width: 41.87vh;
-    height: 39.88vh;
-    background: rgb(255, 255, 255);
-    border: 2px solid rgba(26, 25, 25, 0.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 40px;
+.card-login {
+    width: 46vh;
+    height: 44vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
 }
 
-.wrapper h1 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 18px;
-}
-
-.wrapper .input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-}
-
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, .2);
-    border-radius: 10px;
+.card-login>h1 {
     color: #000000;
-    padding: 20px 45px 20px 20px;
+    font-size: 34px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 3.55vh;
+    margin-top: 20px;
 }
 
-.input-box input::placeholder {
-    color: #000000;
-}
-
-.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 20%;
-    transform: translateY(20%);
-    font-size: 20px;
-}
-
-.wrapper .btn {
+.textfield {
     width: 100%;
-    height: 45px;
-    background: #000000;
-    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+}
+
+.password {
+    margin-top: 25px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.247);
+    border-radius: 12px;
+    padding: 15px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 12pt;
     outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.textfield>label {
+    color: #000000;
+    margin-bottom: 5px;
+    margin-left: 9px;
+}
+
+.textfield>input::placeholder {
+    color: #00000094;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
     color: #ffffff;
-    font-weight: 600;
+    background: #00a2ff;
+    cursor: pointer;
 }
+
+@media screen and (max-width: 430px) {
+    .card-login {
+        height: 48vh;
+        width: 90vw;
+    }
+}
+
+@media (max-height: 740px) {
+    .card-login {
+        height: 54vh;
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+    .card-login {
+        height: 60vh;
+    }
+}
+
+/* @media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+} */

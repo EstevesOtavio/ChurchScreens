@@ -3,28 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Resources/bxs-church.svg" type="image/svg">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
 </head>
 <body>
-    
-<div class="wrapper">
-    <form action="">
-        <h1>Login</h1>
-        <div class="input-box">
-            <input type="text" placeholder="Username" required>
-            <i class='bx bxs-user'></i>
+    <div class="login">
+        <div class="card-login">
+            <h1>Login</h1>
+            <div class="textfield">
+                <label for="user">User</label>
+                <input type="text" name="user" placeholder="User">
+            </div>
+            <div class="textfield password">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <button class="btn-login">Login</button>
         </div>
-        <div class="input-box">
-            <input type="password" placeholder="Password" required>
-            <i class='bx bxs-lock-alt'></i>
-        </div>
-
-        <button type="submit" class="btn">Login</button>
-    </form>
-</div>
-
+    </div>
 </body>
 </html>
