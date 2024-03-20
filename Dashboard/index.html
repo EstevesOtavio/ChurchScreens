@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="white">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">Opções</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Opções da Coordenação
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-regular fa-user pe-2"></i>
+                            Alunos
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-user-pen"></i>
+                            Coordenadores
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="image/bxs-user-circle.svg" class="avatar img-fluid rounded" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Perfil</a>
+                                <a href="#" class="dropdown-item">Configurações</a>
+                                <a href="#" class="dropdown-item">Sair</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h4>Visualização da Coordenação</h4>
+                    </div>
+                    <!-- Table Element -->
+                    <div class="card border-0">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                Lista de Alunos
+                            </h5>
+                            <h6 class="card-subtitle text-muted">
+                                Acompanhe a Lista Dos Alunos Matriculados Aqui:
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>João Augusto de Oliveira</td>
+                                        <td></td>
+                                        <td>Ativo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Pedro De César Cavalcanti</td>
+                                        <td></td>
+                                        <td>Ativo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Gustavo Noronha da Silva</td>
+                                        <td>Ativo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Agusto Ferreira Chaves</td>
+                                        <td></td>
+                                        <td>Ativo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Andriele da Silva Bastos</td>
+                                        <td></td>
+                                        <td>Ativo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td colspan="2">Gabriel Nogueira Pereira</td>
+                                        <td>Inativo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>Marcos Abraão de Alencar</td>
+                                        <td></td>
+                                        <td>Ativo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>José Oliveira Filho</td>
+                                        <td></td>
+                                        <td>Pendente</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td colspan="2">Maurílio Machado Ferreira</td>
+                                        <td>Ativo</td>
+                                    </tr>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>Ana Clara Olívia de Omena</td>
+                                        <td></td>
+                                        <td>Ativo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
