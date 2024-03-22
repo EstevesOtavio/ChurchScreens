@@ -41,7 +41,7 @@ h4 {
 #sidebar {
     max-width: 264px;
     min-width: 264px;
-    background: var(--bs-dark);
+    background: rgb(0, 102, 255);
     transition: all 0.35s ease-in-out;
 }
 
@@ -59,12 +59,12 @@ h4 {
 /* Sidebar Elements Style */
 
 .sidebar-logo {
-    padding: 1.15rem;
+    padding: 2rem;
 }
 
 .sidebar-logo a {
     color: #e9ecef;
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -72,22 +72,35 @@ h4 {
     flex-grow: 1;
     list-style: none;
     margin-bottom: 0;
-    padding-left: 0;
+    padding-left: 25px;
     margin-left: 0;
 }
 
-.sidebar-header {
-    color: #e9ecef;
-    font-size: .75rem;
-    padding: 1.5rem 1.5rem .375rem;
-}
+
 
 a.sidebar-link {
+    width: 100%;
+    border-radius: 30px 0 0 30px;
     padding: .625rem 1.625rem;
     color: #e9ecef;
     position: relative;
     display: block;
-    font-size: 0.875rem;
+    font-size: .9rem;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-link.active{
+    background: #ffffff;
+    color: #0d6efd;
+}
+
+.sidebar-item i {
+    margin-right: 11px;
+    font-size: 1.4rem;
 }
 
 .sidebar-link[data-bs-toggle="collapse"]::after {
@@ -107,6 +120,7 @@ a.sidebar-link {
     transform: rotate(45deg);
     transition: all .2s ease-out;
 }
+
 
 .avatar {
     height: 40px;
@@ -157,39 +171,43 @@ a.sidebar-link {
     margin-left: -264px;
 }
 
-/* Table Elements */
+/* Title */
 
-.card {
-    border: 0.1px solid #0000002c;
+.btn-success {
+    font-size: .9rem;
+    padding: .50rem .70rem;
 }
 
-.card-header {
-    background-color: #0d6dfde3;
+/* List */
+
+.list {
+    font-size: 1rem;
 }
 
-.card-title {
-    color: white;
+.list-title {
+    font-size: 1.2rem;
 }
 
-.card-subtitle {
-    color: white !important;
+.list-group {
+    border-radius: 12px;
 }
 
-.status-title {
-    padding-left: 20px !important;
+.list-group-numbered {
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
-.text-bg-primary {
-    margin-left: 13px;
-}
+/* Pagination */
 
-.text-bg-danger {
-    margin-left: 8px;
+.pagination {
+    --bs-pagination-font-size: .7rem;
 }
 
 /* Footer and Nav */
 
-@media (max-width:767.98px) {
+@media (max-width:768px) {
 
     .js-sidebar {
         margin-left: -264px;
@@ -199,7 +217,28 @@ a.sidebar-link {
         margin-left: 0;
     }
 
-    .navbar {
+    .navbar, footer {
         width: 100vw;
+    }
+
+    .btn-success {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width:425px) {
+    .btn-success {
+        width:60%;
+    }
+}
+
+@media (max-width:320px) {
+    .title-coordenacao h4{
+        font-size: 1.1rem;
+    }
+
+    .btn-success {
+        width: 50%;
+        font-size: 0.8rem;
     }
 }
