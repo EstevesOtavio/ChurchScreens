@@ -178,6 +178,12 @@ a.sidebar-link {
     padding: .50rem .70rem;
 }
 
+/* Navbar - Search */
+
+.search {
+    background: none !important;
+}
+
 /* List */
 
 .list {
