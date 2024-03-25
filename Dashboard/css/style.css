@@ -144,12 +144,6 @@ a.sidebar-link {
     }
 }
 
-.title-coordenacao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .card {
     box-shadow: 0 0 .875rem 0 rgba(34, 46, 60, .05);
     margin-bottom: 24px;
@@ -169,13 +163,6 @@ a.sidebar-link {
 
 #sidebar.collapsed {
     margin-left: -264px;
-}
-
-/* Title */
-
-.btn-success {
-    font-size: .9rem;
-    padding: .50rem .70rem;
 }
 
 /* Navbar - Search */
@@ -205,10 +192,24 @@ a.sidebar-link {
     border-bottom-right-radius: 12px;
 }
 
-/* Pagination */
+/* Nav-bottom */
+
+.nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.btn-success {
+    font-size: .9rem;
+    padding: .50rem .70rem;
+}
 
 .pagination {
-    --bs-pagination-font-size: .7rem;
+    --bs-pagination-font-size: .8rem;
+    margin: 0 !important;
 }
 
 /* Footer and Nav */
@@ -226,15 +227,15 @@ a.sidebar-link {
     .navbar, footer {
         width: 100vw;
     }
-
-    .btn-success {
-        padding: 0.5rem;
-    }
 }
 
 @media (max-width:425px) {
+    .nav-bottom {
+        flex-direction: column-reverse;
+    }
+
     .btn-success {
-        width:60%;
+        margin-top: 1rem;
     }
 }
 
