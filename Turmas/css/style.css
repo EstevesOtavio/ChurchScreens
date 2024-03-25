@@ -175,51 +175,32 @@ a.sidebar-link {
     opacity: 1;
 }
 
-/* Navbar - Search */
+/* Main-Turmas */
 
-.search {
-    background: none !important;
-}
-
-/* List */
-
-.list {
-    font-size: 1rem;
-}
-
-.list-title {
-    font-size: 1.2rem;
-}
-
-.list-group {
-    border-radius: 12px;
-}
-
-.list-group-numbered {
-    padding: 0;
-    margin: 0;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-
-/* Nav-bottom */
-
-.nav-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.turmas {
     width: 100%;
-    padding: 1rem;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
 }
 
-.btn-success {
-    font-size: .9rem;
-    padding: .50rem .70rem;
+.card.turma {
+    width: 45%;
+    height: 15%;
+    border-radius: 12px;
+    margin: 1.5rem;
 }
 
-.pagination {
-    --bs-pagination-font-size: .8rem;
-    margin: 0 !important;
+.card-title {
+    font-size: 2.3rem;
+    margin: .7rem !important;   
+}
+
+.card-color {
+    border-radius: 0 0 12px 12px;
+    height: 100%;
+    background: #0d6efd;
 }
 
 /* Footer and Nav */
