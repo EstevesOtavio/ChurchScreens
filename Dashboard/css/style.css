@@ -251,7 +251,7 @@ a.sidebar-link {
 
 .card-title {
     font-size: 2.3rem;
-    margin: 1.9% !important;   
+    margin: .7rem !important;   
 }
 
 .card-color {
@@ -292,7 +292,7 @@ a.sidebar-link {
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        padding-top: 1.5rem;
+        padding: 1.5rem;
     }
 
     .card.turma {
