@@ -42,7 +42,7 @@
             </div>
         </aside>
         <div class="complete-main">
-            <div class="main active-turmas">
+            <div class="main">
                 <nav class="navbar navbar-expand px-3 border-bottom">
                     <button class="btn" id="sidebar-toggle" type="button">
                         <span class="navbar-toggler-icon"></span>
@@ -63,20 +63,19 @@
                     </div>
                 </nav>
                 <main class="content px-3 py-2 hidden">
-                    <div class="container-fluid hidden">
+                    <div class="container-fluid main-list">
                         <div class="mb-3 mt-3 title-coordenacao">
                             <h4 class="mb-0">Visualização da Coordenação</h4>
                         </div>
                         <div class="container-fluid mb-3 p-0">
-                            <form class="d-flex w-100" role="search">
-                                <input class="form-control me-2" name="search-input" placeholder="Pesquisar Aluno"
+                            <form class="d-flex w-100 search-list" role="search">
+                                <input class="form-control m-0" name="search-input" placeholder="Pesquisar Aluno"
                                     aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Pesquisar</button>
                             </form>
                         </div>
                         <div class="list-group list">
-                            <button type="button"
-                                class="list-group-item list-group-item-action active list-title hidden"
+                            <button type="button" class="list-group-item list-group-item-action active list-title"
                                 aria-current="true">
                                 Lista dos Alunos
                             </button>
@@ -133,30 +132,30 @@
                                 </button>
                             </ol>
                         </div>
+                        <nav aria-label="..." class="nav-bottom">
+                            <button class="btn btn-success btn-sm rounded-pill btn-add-aluno">Adicionar Aluno</button>
+                            <ul class="pagination m-3">
+                                <li class="page-item disabled">
+                                    <a class="page-link">Anterior</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item" aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Próxima</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav aria-label="..." class="nav-bottom hidden">
-                        <button class="btn btn-success btn-sm rounded-pill">Adicionar Aluno</button>
-                        <ul class="pagination m-3">
-                            <li class="page-item disabled">
-                                <a class="page-link">Anterior</a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item" aria-current="page">
-                                <a class="page-link" href="#">2</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Próxima</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </main>
                 <div class="container-fluid main-turmas hidden">
                     <div class="title-turmas">
                         <h3 class="mb-0">Visualização das Turmas</h3>
                         <button class="btn btn-success btn-turma btn-sm rounded-pill">Nova Turma</button>
                     </div>
-                    <div class="turmas hidden">
+                    <div class="turmas">
                         <a href="#" class="card turma mb-3">
                             <h5 class="card-title m-0">Turma A</h5>
                             <div class="card-color"></div>
@@ -167,8 +166,28 @@
                         </a>
                     </div>
                 </div>
+                <div class="main-add-turma hidden">
+                    <div class=" card-perfil-addturma">
+                        <h5 class="card-title">Dados da Turma</h5>
+                        <div class="row row-perfil">
+                            <div class="col">
+                                <label for="NomeTurma" class="legenda legenda-add-turma">Nome da Turma</label>
+                                <input type="text" class="form-control" id="NomeTurma" placeholder="Nome da Turma"
+                                    aria-label="Nome Completo">
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="..." class="nav-bottom-turma">
+                        <div class="btn-group-add-turma">
+                            <button type="button" class="btn btn-danger">Cancelar <i
+                                    class="fa-solid fa-ban"></i></button>
+                            <button type="button" class="btn btn-success btn-add-turma">Adicionar <i
+                                    class="fa-solid fa-circle-plus"></i></button>
+                        </div>
+                    </nav>
+                </div>
                 <div class="main-perfil">
-                    <div class="card-perfil">
+                    <div class="card-perfil-addturma">
                         <h5 class="card-title">Dados do Aluno</h5>
                         <div class="row row-perfil">
                             <div class="col">
@@ -200,10 +219,14 @@
                             <button type="button" class="btn btn-primary">Documento</button>
                         </div>
                         <div class="seconde-btn-perfil">
-                            <button type="button" class="btn btn-danger">Deletar <i
+                            <button type="button" class="btn btn-danger hidden">Deletar <i
                                     class="fa-solid fa-trash-can"></i></button>
-                            <button type="button" class="btn btn-success btn-editar">Editar <i
+                            <button type="button" class="btn btn-success btn-add-editar hidden">Editar <i
                                     class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-danger">Cancelar <i
+                                    class="fa-solid fa-ban"></i></button>
+                            <button type="button" class="btn btn-success btn-add-editar">Adicionar <i
+                                    class="fa-solid fa-circle-plus"></i></button>
                         </div>
                     </nav>
                 </div>
@@ -229,6 +252,7 @@
                 </div>
             </footer>
         </div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
