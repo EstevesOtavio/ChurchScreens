@@ -103,7 +103,7 @@ a.sidebar-link {
     align-items: center;
 }
 
-.sidebar-link.active{
+.sidebar-link.active {
     background: #ffffff;
     color: #0d6efd;
 }
@@ -246,8 +246,8 @@ a.sidebar-link {
 /* Perfil */
 
 .main-perfil {
-    min-width: 100vw;
-    min-height: 100vh;
+    /* min-width: 100vw;
+    min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -369,7 +369,7 @@ h5.card-title {
     align-items: center;
 }
 
-.btn-add-turma i{
+.btn-add-turma i {
     font-size: 1.08rem;
     margin-left: 3px;
     margin-bottom: .01rem;
@@ -377,6 +377,14 @@ h5.card-title {
 
 .legenda-add-turma {
     margin-left: 13px;
+}
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 /* Footer and Nav */
@@ -465,7 +473,7 @@ h5.card-title {
     }
 
     .main {
-        min-height: 120vh;
+        min-height: 100vh;
     }
 
     /* Perfil */
@@ -509,6 +517,7 @@ h5.card-title {
     }
 
     /* Add - Turmas */
+
     .btn-group-add-turma {
         width: 100%;
         font-size: 1rem;
