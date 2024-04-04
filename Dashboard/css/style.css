@@ -104,7 +104,7 @@ a.sidebar-link {
 }
 
 .sidebar-link.active {
-    background: #ffffff;
+    background: #fbfcff;
     color: #0d6efd;
 }
 
@@ -389,6 +389,64 @@ h5.card-title {
 
 /* Footer and Nav */
 
+@media (max-width:1024px) and (max-height:1366px) {
+    /* Turma */
+
+    .card.turma {
+        width: 100%;
+        height: 10%;
+        margin: .3rem;
+    }
+}
+
+@media (max-width:1024px) and (max-height:600px) {
+    .complete-main {
+        height: 100vh;
+    }
+
+    .main {
+        min-height: 60rem;
+    }
+
+    footer {
+        background: #ffffff67;
+        z-index: 3;
+    }
+
+    #sidebar {
+        min-height: 60rem;
+    }
+    
+    /* Turmas */
+
+    .card.turma {
+        width: 100%;
+        height: 20%;
+        margin: .3rem;
+    }
+
+}
+
+@media (max-width:912px) and (max-height:1368px) {
+    /* Turma */
+
+    .card.turma {
+        width: 100%;
+        height: 10%;
+        margin: .3rem;
+    }
+}
+
+@media (max-width:820px) and (max-height:1180px) {
+    /* Turma */
+
+    .card.turma {
+        width: 100%;
+        height: 12%;
+        margin: .3rem;
+    }
+}
+
 @media (max-width:768px) {
 
     .js-sidebar {
@@ -404,7 +462,30 @@ h5.card-title {
     }
 }
 
-@media (max-width:425px) {
+@media (max-width:540px) and (max-height:720px) {
+    .complete-main {
+        height: 100vh;
+    }
+
+    .main {
+        min-height: 50rem;
+    }
+
+    footer {
+        background: #ffffff67;
+        z-index: 3;
+    }
+
+    /* Turma */
+
+    .card.turma {
+        width: 100%;
+        height: 15%;
+        margin: .3rem;
+    }
+}
+
+@media (max-width:430px) {
     .nav-bottom {
         flex-direction: column-reverse;
     }
@@ -437,6 +518,7 @@ h5.card-title {
 
     .card.turma {
         width: 100%;
+        height: 15%;
         margin: .3rem;
     }
 
@@ -467,13 +549,32 @@ h5.card-title {
     }
 }
 
-@media (max-width:375px) {
+@media (max-width:412px) and (max-height:914px) {
+    /* Turma */
+
+    .card.turma {
+        width: 100%;
+        height: 15%;
+        margin: .3rem;
+    }
+}
+
+@media (max-width:390px) {
     .complete-main {
         height: 100vh;
     }
 
     .main {
-        min-height: 100vh;
+        min-height: 70rem;
+    }
+
+    footer {
+        background: #ffffff67;
+        z-index: 3;
+    }
+
+    #sidebar.collapsed {
+        min-height: 70rem;
     }
 
     /* Perfil */
@@ -494,6 +595,34 @@ h5.card-title {
 
     .btn-add-editar {
         margin-top: 10px !important;
+    }
+
+    /* Turma */
+
+    .card.turma {
+        width: 100%;
+        height: 20%;
+        margin: .3rem;
+    }
+}
+
+@media (max-width:390px) and (max-height:844px) {
+    /* Turma */
+
+    .card.turma {
+        width: 100%;
+        height: 15%;
+        margin: .3rem;
+    }
+}
+
+@media (max-width:375px) and (max-height:667px) {
+    /* Turma */
+
+    .card.turma {
+        width: 100%;
+        height: 20%;
+        margin: .3rem;
     }
 }
 
@@ -527,5 +656,33 @@ h5.card-title {
         font-size: .9rem;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width:280px) and (max-height:653px) {
+    .complete-main {
+        height: 100vh;
+    }
+
+    .main {
+        min-height: 85rem;
+    }
+
+    footer {
+        background: #ffffff67;
+        z-index: 3;
+    }
+
+    #sidebar.collapsed {
+        margin-left: -25px;
+        min-height: 85rem;
+    }
+
+    /* Turmas */
+
+    .card.turma {
+        width: 100%;
+        height: 20%;
+        margin: .3rem;
     }
 }
