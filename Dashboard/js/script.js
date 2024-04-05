@@ -10,6 +10,12 @@ studentsToggle.addEventListener("click",function(){
     document.querySelector("#coordenadores-item").classList.remove("active");
     document.querySelector("#list-screen").classList.add("show");
     document.querySelector("#turmas-screen").classList.remove("show");
+    document.querySelector("#pesquisar-aluno").classList.add("show")
+    document.querySelector("#pesquisar-coordenador").classList.remove("show")
+    document.querySelector("#list-alunos-title").classList.add("show")
+    document.querySelector("#list-coordenadores-title").classList.remove("show")
+    document.querySelector("#btn-adicionar-aluno").classList.add("show")
+    document.querySelector("#btn-adicionar-coordenador").classList.remove("show")
 });
 
 const coordenadoresToggle = document.querySelector("#coordenadores-item");
@@ -19,6 +25,12 @@ coordenadoresToggle.addEventListener("click",function(){
     document.querySelector("#alunos-item").classList.remove("active");
     document.querySelector("#list-screen").classList.add("show");
     document.querySelector("#turmas-screen").classList.remove("show");
+    document.querySelector("#pesquisar-aluno").classList.remove("show")
+    document.querySelector("#pesquisar-coordenador").classList.add("show")
+    document.querySelector("#list-alunos-title").classList.remove("show")
+    document.querySelector("#list-coordenadores-title").classList.add("show")
+    document.querySelector("#btn-adicionar-aluno").classList.remove("show")
+    document.querySelector("#btn-adicionar-coordenador").classList.add("show")
 });
 
 const classesToggle = document.querySelector("#turmas-item");

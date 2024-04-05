@@ -62,22 +62,24 @@
                         </ul>
                     </div>
                 </nav>
-                <main id="list-screen" class="content px-3 py-2 hidden">
+                <main id="list-screen" class="content px-3 py-2 hidden show">
                     <div class=" container-fluid main-list">
                         <div class="mb-3 mt-3 title-coordenacao">
                             <h4 class="mb-0">Visualização da Coordenação</h4>
                         </div>
                         <div class="container-fluid mb-3 p-0">
                             <form class="d-flex w-100 search-list" role="search">
-                                <input class="form-control m-0" name="search-input" placeholder="Pesquisar Aluno"
-                                    aria-label="Search">
+                                <input id="pesquisar-aluno" class="form-control m-0 hidden show" name="search-input" placeholder="Pesquisar Aluno" aria-label="Search">
+                                <input id="pesquisar-coordenador" class="form-control m-0 hidden" name="search-input" placeholder="Pesquisar Coordenador" aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Pesquisar</button>
                             </form>
                         </div>
                         <div class="list-group list">
-                            <button type="button" class="list-group-item list-group-item-action active list-title"
-                                aria-current="true">
+                            <button type="button" id="list-alunos-title" class="list-group-item list-group-item-action active list-title hidden show" aria-current="true">
                                 Lista dos Alunos
+                            </button>
+                            <button type="button" id="list-coordenadores-title" class="list-group-item list-group-item-action active list-title hidden" aria-current="true">
+                                Lista dos Coordenadores
                             </button>
                             <div class="list-group-numbered">
                                 <button type="button"
@@ -133,7 +135,8 @@
                             </div>
                         </div>
                         <nav aria-label="..." class="nav-bottom">
-                            <button class="btn btn-success btn-sm rounded-pill btn-add-aluno">Adicionar Aluno</button>
+                            <button id="btn-adicionar-aluno" class="btn btn-success btn-sm rounded-pill btn-add-aluno hidden show">Adicionar Aluno</button>
+                            <button id="btn-adicionar-coordenador" class="btn btn-success btn-sm rounded-pill btn-add-coordenador hidden">Adicionar Coordenador</button>
                             <ul class="pagination m-3">
                                 <li class="page-item disabled">
                                     <a class="page-link">Anterior</a>

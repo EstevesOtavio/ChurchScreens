@@ -220,6 +220,10 @@ a.sidebar-link {
     border-radius: 12px;
 }
 
+.list-title {
+    border-radius: 12px 12px 0px 0px;
+}
+
 .list-group-numbered {
     padding: 0;
     margin: 0;
@@ -635,7 +639,7 @@ h5.card-title {
         font-size: 1.1rem;
     }
 
-    .btn-add-aluno {
+    .btn-add-aluno, .btn-add-coordenador {
         width: 60%;
         font-size: 0.8rem;
     }
