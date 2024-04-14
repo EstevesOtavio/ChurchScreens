@@ -40,4 +40,15 @@ classesToggle.addEventListener("click",function(){
     document.querySelector("#coordenadores-item").classList.remove("active");
     document.querySelector("#turmas-screen").classList.add("show");
     document.querySelector("#list-screen").classList.remove("show");
+    document.querySelector("#main-perfilStudent").classList.remove("show");
+});
+
+const perfilStudentToggle = document.querySelector("#btn-adicionar-aluno");
+perfilStudentToggle.addEventListener("click",function(){
+    document.querySelector("#turmas-item").classList.remove("active");
+    document.querySelector("#alunos-item").classList.add("active");
+    document.querySelector("#coordenadores-item").classList.remove("active");
+    document.querySelector("#turmas-screen").classList.remove("show");
+    document.querySelector("#list-screen").classList.remove("show");
+    document.querySelector("#main-perfilStudent").classList.add("show");
 });

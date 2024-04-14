@@ -183,7 +183,7 @@ a.sidebar-link {
 }
 
 .show {
-    display: block !important;
+    display: flex !important;
 }
 
 /* Navbar - Search */
@@ -253,7 +253,7 @@ a.sidebar-link {
 
 /* Perfil */
 
-.main-perfil {
+.main-perfil-student {
     /* min-width: 100vw;
     min-height: 100vh; */
     display: flex;
