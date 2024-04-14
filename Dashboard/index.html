@@ -169,15 +169,68 @@
                         <h3 class="mb-0">Visualização das Turmas</h3>
                         <button class="btn btn-success btn-turma btn-sm rounded-pill">Nova Turma</button>
                     </div>
-                    <div class="turmas">
-                        <a href="#" class="card turma mb-3">
-                            <h5 class="card-title m-0">Turma A</h5>
-                            <div class="card-color"></div>
-                        </a>
-                        <a href="#" class="card turma mb-3">
-                            <h5 class="card-title m-0">Turma B</h5>
-                            <div class="card-color"></div>
-                        </a>
+                    <div class="row turmas">
+                        <div class="col col-turmas1">
+                            <a href="#" class="card turma mb-3">
+                                <h5 class="card-title m-0">Turma A</h5>
+                                <div class="card-color"></div>
+                            </a>
+                            <a href="#" class="card turma mb-3">
+                                <h5 class="card-title m-0">Turma A</h5>
+                                <div class="card-color"></div>
+                            </a>
+                            <a href="#" class="card turma mb-3">
+                                <h5 class="card-title m-0">Turma A</h5>
+                                <div class="card-color"></div>
+                            </a>
+                            <a href="#" class="card turma mb-3">
+                                <h5 class="card-title m-0">Turma A</h5>
+                                <div class="card-color"></div>
+                            </a>
+                            <a href="#" class="card turma mb-3 card5-turma-col1">
+                                <h5 class="card-title m-0">Turma A</h5>
+                                <div class="card-color"></div>
+                            </a>
+                        </div>
+                        <div class="col col-turmas2">
+                            <a href="#" class="card turma mb-3">
+                                <h5 class="card-title m-0">Turma B</h5>
+                                <div class="card-color"></div>
+                            </a>
+                            <a href="#" class="card turma mb-3">
+                                <h5 class="card-title m-0">Turma B</h5>
+                                <div class="card-color"></div>
+                            </a>
+                            <a href="#" class="card turma mb-3">
+                                <h5 class="card-title m-0">Turma B</h5>
+                                <div class="card-color"></div>
+                            </a>
+                            <a href="#" class="card turma mb-3">
+                                <h5 class="card-title m-0">Turma B</h5>
+                                <div class="card-color"></div>
+                            </a>
+                            <a href="#" class="card turma mb-3 card5-turma-col2">
+                                <h5 class="card-title m-0">Turma B</h5>
+                                <div class="card-color"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row row-nav-turmas">
+                        <nav aria-label="...">
+                            <ul class="pagination pagination-turmas">
+                              <li class="page-item disabled">
+                                <a class="page-link">Previous</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
                     </div>
                 </div>
                 <div class="main-add-turma hidden" id="main-addTurma">
@@ -193,14 +246,12 @@
                     </div>
                     <nav aria-label="..." class="nav-bottom-turma">
                         <div class="btn-group-add-turma">
-                            <button type="button" class="btn btn-danger">Cancelar <i
-                                    class="fa-solid fa-ban"></i></button>
-                            <button type="button" class="btn btn-success btn-add-turma">Adicionar <i
-                                    class="fa-solid fa-circle-plus"></i></button>
+                            <button type="button" class="btn btn-danger">Cancelar <i class="fa-solid fa-ban"></i></button>
+                            <button type="button" class="btn btn-success btn-add-turma">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
                         </div>
                     </nav>
                 </div>
-                <form class="main-perfil-student hidden show" id="main-perfilStudent">
+                <form class="main-perfil-student hidden" id="main-perfilStudent">
                     <div class="card-perfil-addturma">
                         <h5 class="card-title">Dados do Aluno</h5>
                         <div class="row row-perfil">
@@ -239,14 +290,10 @@
                             <button type="button" class="btn btn-primary">Documento</button>
                         </div>
                         <div class="seconde-btn-perfil">
-                            <button type="button" class="btn btn-danger">Deletar <i
-                                    class="fa-solid fa-trash-can"></i></button>
-                            <button type="button" class="btn btn-success btn-add-editar">Editar <i
-                                    class="fa-solid fa-pen"></i></button>
-                            <button type="button" class="btn btn-danger hidden">Cancelar <i
-                                    class="fa-solid fa-ban"></i></button>
-                            <button type="button" class="btn btn-success btn-add-editar hidden">Adicionar <i
-                                    class="fa-solid fa-circle-plus"></i></button>
+                            <button type="button" class="btn btn-danger">Deletar <i class="fa-solid fa-trash-can"></i></button>
+                            <button type="button" class="btn btn-success btn-add-editar">Editar <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-danger hidden">Cancelar <i class="fa-solid fa-ban"></i></button>
+                            <button type="button" class="btn btn-success btn-add-editar hidden">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
                         </div>
                     </nav>
                 </form>
