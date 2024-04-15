@@ -360,8 +360,8 @@ h5.card-title {
 /* Add_Turma */
 
 .main-add-turma {
-    min-width: 100vw;
-    min-height: 100vh;
+    /* min-width: 100vw;
+    min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
