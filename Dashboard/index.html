@@ -233,7 +233,7 @@
                           </nav>
                     </div>
                 </div>
-                <div class="main-add-turma hidden show" id="main-addTurma">
+                <div class="main-add-turma hidden" id="main-addTurma">
                     <div class=" card-perfil-addturma">
                         <h5 class="card-title">Dados da Turma</h5>
                         <div class="row row-perfil">
@@ -247,6 +247,11 @@
                                     <option value="2">Coordenador 2</option>
                                     <option value="3">Coordenador 3</option>
                                     <option value="3">Coordenador 4</option>
+                                    <option value="3">Coordenador 5</option>
+                                    <option value="3">Coordenador 6</option>
+                                    <option value="3">Coordenador 7</option>
+                                    <option value="3">Coordenador 8</option>
+                                    <option value="3">Coordenador 9</option>
                                 </select>
                                 <label for="NomeTurma" class="legenda legenda-add-turma">Selecione os Alunos da Turma</label>
                                 <select class="form-select legenda" aria-label="Default select example" multiple>
@@ -254,6 +259,10 @@
                                     <option value="2">Aluno 2</option>
                                     <option value="3">Aluno 3</option>
                                     <option value="3">Aluno 4</option>
+                                    <option value="3">Aluno 5</option>
+                                    <option value="3">Aluno 6</option>
+                                    <option value="3">Aluno 7</option>
+                                    <option value="3">Aluno 8</option>
                                 </select>
                             </div>
                         </div>
@@ -287,6 +296,46 @@
                                 <label for="Madrinha" class="legenda">Madrinha</label>
                                 <input type="text" class="form-control" id="Madrinha" placeholder="Madrinha"
                                     aria-label="Madrinha">
+                                <label for="Telefone" class="legenda">Telefone</label>
+                                <input type="text" class="form-control" id="Telefone" placeholder="Telefone"
+                                    aria-label="Telefone">
+                            </div>
+                        </div>
+                        <div class="row row-perfil">
+                            <div class="col">
+                                <label for="Obervacao" class="legenda">Observações</label>
+                                <textarea class="form-control" id="Obervacao" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="..." class="nav-bottom-perfil">
+                        <div class="first-btn-perfil">
+                            <button type="button" class="btn btn-primary">Documento</button>
+                        </div>
+                        <div class="seconde-btn-perfil">
+                            <button type="button" class="btn btn-danger">Deletar <i class="fa-solid fa-trash-can"></i></button>
+                            <button type="button" class="btn btn-success btn-add-editar">Editar <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-danger hidden">Cancelar <i class="fa-solid fa-ban"></i></button>
+                            <button type="button" class="btn btn-success btn-add-editar hidden">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
+                        </div>
+                    </nav>
+                </form>
+                <form class="main-perfil-student hidden show" id="main-perfilCoordenador">
+                    <div class="card-perfil-addturma">
+                        <h5 class="card-title">Dados do Cordenador</h5>
+                        <div class="row row-perfil">
+                            <div class="col">
+                                <label for="NomeCompleto" class="legenda">Nome Completo</label>
+                                <input type="text" class="form-control" id="NomeCompleto" placeholder="Nome Completo"
+                                    aria-label="Nome Completo">
+                                <label for="Email" class="legenda">Email</label>
+                                <input type="text" class="form-control" id="Email" placeholder="Email"
+                                    aria-label="Email">
+                            </div>
+                            <div class="col">
+                                <label for="Documento" class="legenda">Documento RG/CN</label>
+                                <input type="text" class="form-control" id="Documento" placeholder="Documento"
+                                    aria-label="Documento">
                                 <label for="Telefone" class="legenda">Telefone</label>
                                 <input type="text" class="form-control" id="Telefone" placeholder="Telefone"
                                     aria-label="Telefone">
