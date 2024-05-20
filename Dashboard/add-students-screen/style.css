@@ -124,19 +124,20 @@ a.sidebar-link {
     margin-left: auto;
 }
 
-/* Add-Turmas */
+/* Perfil */
 
-.main-add-turma {
+.main-perfil-student {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1; /*Para ocupar todo espaço acima do footer*/
 }
 
-.card-addturma {
+.card-perfil {
     width: 80%;
     margin: 15px 120px;
     padding: 20px 2rem 23px;
+    padding-top: 20px;
     background: rgb(255, 255, 255);
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.11);
     border-radius: 20px;
@@ -144,32 +145,16 @@ a.sidebar-link {
 
 .card-title {
     font-size: 2.3rem;
-    margin: .7rem;
+    margin: .7rem;   
 }
 
 h5.card-title {
     margin-bottom: 20px;
 }
 
-.nav-bottom-turma {
-    width: 80%;
-    display: flex;
-    justify-content: end;
-}
-
-.btn-group-add-turma {
-    display: flex;
-}
-
-.btn-add-turma {
-    margin-left: 8px;
-    display: flex;
-    align-items: center;
-}
-
-.btn-add-turma i {
-    font-size: 1.08rem;
-    margin-left: 3px;
+.row-perfil {
+    width: 90%;
+    margin: auto;
 }
 
 .legenda {
@@ -177,20 +162,66 @@ h5.card-title {
     margin-left: 10px;
 }
 
-.form-control, .form-select {
-    margin: 10px 0px;
+.form-control {
+    margin: 10px;
     margin-top: 2px;
+}
+
+.nav-bottom-perfil {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
 
 .footer {
-    margin-top: 3rem;
+    margin-top: 1.16rem;
     width: 100%;
 }
 
+@media (width: 820px) and (height: 1180px), (width: 853px) and (height: 1280px) {
+    .row-perfil {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 768px) {
-    
+    #sidebar {
+        min-width: 40%;
+    }
+
+    #sidebar.collapsed {
+        margin-left: -54%;
+    }
+
+    .nav-bottom-perfil {
+        width: 84.4%;
+    }
+
+    .row-perfil {
+        flex-direction: column;
+    }
+
+    .col {
+        padding: 0;
+    }
+
+    .form-control {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .legenda {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btn-primary {
+        margin-right: .7px;
+    }
 }
 
 @media (width: 540px) and (height: 720px) {
@@ -208,6 +239,10 @@ h5.card-title {
 
     #sidebar.collapsed {
         margin-left: -77%;
+    }
+
+    .main-perfil-student {
+        width: 100vw;
     }
 
     .footer {
@@ -231,6 +266,32 @@ h5.card-title {
     #sidebar.collapsed {
         margin-left: -70%;
     }
+
+    .card-perfil {
+        margin-bottom: 0;
+    }
+
+    .nav-bottom-perfil {
+        flex-direction: column;
+    }
+
+    .btn-primary {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+
+    .second-btn-perfil {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-danger {
+        width: 49%;
+    }
+
+    .btn-success {
+        width: 49%;
+    }
 }
 
 @media (width: 360px) {
@@ -247,14 +308,22 @@ h5.card-title {
     .sidebar-logo {
         padding: 2rem 25px;
     }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
 }
 
 @media (width: 320px) {
     .card-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
-
+    
     .sidebar-logo {
         padding: 2rem 18px;
+    }
+
+    .btn-primary, .btn-danger, .btn-success {
+        font-size: .92rem;
     }
 }

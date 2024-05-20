@@ -20,13 +20,13 @@
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="##" id="alunos-item" class="sidebar-link">
+                    <a href="##" id="alunos-item" class="sidebar-link active">
                         <i class="fa-solid fa-user"></i>
                         Alunos
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" id="coordenadores-item" class="sidebar-link active">
+                    <a href="#" id="coordenadores-item" class="sidebar-link">
                         <i class="fa-solid fa-user-pen"></i>
                         Coordenadores
                     </a>
@@ -60,7 +60,7 @@
                 </ul>
             </div>
         </nav>
-        <main id="list-screen-coordenadores" class="main-list-screen-coordenadores content px-3 py-2">
+        <main id="list-screen-students" class="main-list-screen-students content px-3 py-2">
             <div class="container-fluid main-list">
                 <div class="mb-3 mt-3 title-coordenacao">
                     <h4 class="mb-0">Visualização da Coordenação</h4>
@@ -68,7 +68,7 @@
                 <div class="container-fluid p-0 container-search-list">
                     <form class="d-flex w-100 search-list" role="search">
                         <input id="pesquisar-coordenador" class="form-control m-0 hidden" name="search-input"
-                            placeholder="Pesquisar Coordenador" aria-label="Search">
+                            placeholder="Pesquisar Aluno" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Pesquisar</button>
                     </form>
                 </div>
@@ -76,7 +76,7 @@
                     <span id="list-coordenadores-title"
                         class="list-group-item list-group-item-action active list-title"
                         aria-current="true">
-                        Lista dos Coordenadores
+                        Lista dos Alunos
                     </span>
                     <div class="list-group-numbered">
                         <button type="button"
@@ -133,7 +133,7 @@
                 </div>
                 <nav aria-label="..." class="nav-bottom">
                     <button id="btn-adicionar-coordenador"
-                        class="btn btn-success btn-sm rounded-pill btn-add-coordenador">Adicionar Coordenador
+                        class="btn btn-success btn-sm rounded-pill btn-add-coordenador">Adicionar Aluno
                     </button>
                     <ul class="pagination">
                         <li class="page-item disabled">
@@ -152,7 +152,7 @@
             </div>
         </main>
         <footer class="footer">
-            <div class="container-fluid">
+            <div class=" container-fluid">
                 <div class="row text-muted">
                     <div class="col-6 text-start">
                         <p class="mb-0">

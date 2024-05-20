@@ -26,15 +26,15 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" id="coordenadores-item" class="sidebar-link">
+                    <a href="#" id="coordenadores-item" class="sidebar-link active">
                         <i class="fa-solid fa-user-pen"></i>
                         Coordenadores
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" id="turmas-item" class="sidebar-link active">
+                    <a href="#" id="turmas-item" class="sidebar-link">
                         <i class="fa-solid fa-book"></i>
-                        <span>Turmas</span>
+                        Turmas
                     </a>
                 </li>
             </ul>
@@ -60,54 +60,51 @@
                 </ul>
             </div>
         </nav>
-        <main class="main-add-turma hidden show" id="main-addTurma">
-            <div class="card-addturma">
-                <h5 class="card-title">Dados da Turma</h5>
+        <form class="main-perfil-coordenador" id="main-perfilCoordenador">
+            <div class="card-perfil">
+                <h5 class="card-title">Dados do Cordenador</h5>
                 <div class="row row-perfil">
                     <div class="col">
-                        <label for="NomeTurma" class="legenda">Nome da Turma</label>
-                        <input type="text" class="form-control" id="NomeTurma" placeholder="Nome da Turma"
+                        <label for="NomeCompleto" class="legenda">Nome Completo</label>
+                        <input type="text" class="form-control" id="NomeCompleto" placeholder="Nome Completo"
                             aria-label="Nome Completo">
-                        <label for="NomeTurma" class="legenda">Selecione os Coordenadoes da Turma</label>
-                        <select class="form-select legenda" aria-label="Default select example" multiple>
-                            <option value="1">Coordenador 1</option>
-                            <option value="2">Coordenador 2</option>
-                            <option value="3">Coordenador 3</option>
-                            <option value="3">Coordenador 4</option>
-                            <option value="3">Coordenador 5</option>
-                            <option value="3">Coordenador 6</option>
-                            <option value="3">Coordenador 7</option>
-                            <option value="3">Coordenador 8</option>
-                            <option value="3">Coordenador 9</option>
-                        </select>
-                        <label for="NomeTurma" class="legenda">Selecione os Alunos da Turma</label>
-                        <select class="form-select legenda" aria-label="Default select example" multiple>
-                            <option value="1">Aluno 1</option>
-                            <option value="2">Aluno 2</option>
-                            <option value="3">Aluno 3</option>
-                            <option value="3">Aluno 4</option>
-                            <option value="3">Aluno 5</option>
-                            <option value="3">Aluno 6</option>
-                            <option value="3">Aluno 7</option>
-                            <option value="3">Aluno 8</option>
-                        </select>
+                        <label for="Email" class="legenda">Email</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email"
+                            aria-label="Email">
+                    </div>
+                    <div class="col">
+                        <label for="Documento" class="legenda">Documento RG/CN</label>
+                        <input type="text" class="form-control" id="Documento" placeholder="Documento"
+                            aria-label="Documento">
+                        <label for="Telefone" class="legenda">Telefone</label>
+                        <input type="text" class="form-control" id="Telefone" placeholder="Telefone"
+                            aria-label="Telefone">
+                    </div>
+                </div>
+                <div class="row row-perfil">
+                    <div class="col">
+                        <label for="Obervacao" class="legenda">Observações</label>
+                        <textarea class="form-control" id="Obervacao" rows="2"></textarea>
                     </div>
                 </div>
             </div>
-            <nav aria-label="..." class="nav-bottom-turma">
-                <div class="btn-group-add-turma">
+            <nav aria-label="..." class="nav-bottom-perfil">
+                <div class="first-btn-perfil">
+                    <button type="button" class="btn btn-primary">Documento</button>
+                </div>
+                <div class="second-btn-perfil">
                     <button type="button" class="btn btn-danger">Cancelar <i class="fa-solid fa-ban"></i></button>
-                    <button type="button" class="btn btn-success btn-add-turma">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
+                    <button type="button" class="btn btn-success btn-add-editar">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
                 </div>
             </nav>
-        </main>
+        </form>
         <footer class="footer">
             <div class="container-fluid">
                 <div class="row text-muted">
                     <div class="col-6 text-start">
                         <p class="mb-0">
                             <a href="#" class="text-muted">
-                                <strong>Nome da Paróquia</strong>
+                                <strong>Paróquia Santana</strong>
                             </a>
                         </p>
                     </div>
