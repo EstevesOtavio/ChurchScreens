@@ -306,7 +306,7 @@ h5.card-title {
 
 @media (width: 344px) {
     .sidebar-logo {
-        padding: 2rem 25px;
+        padding: 2rem 24px;
     }
 
     .card-title {
@@ -320,7 +320,7 @@ h5.card-title {
     }
     
     .sidebar-logo {
-        padding: 2rem 18px;
+        padding: 2rem 16.4px;
     }
 
     .btn-primary, .btn-danger, .btn-success {

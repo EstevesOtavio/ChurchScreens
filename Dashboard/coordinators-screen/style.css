@@ -294,13 +294,13 @@ a.sidebar-link {
 
 @media (width: 344px) {
     .sidebar-logo {
-        padding: 2rem 25px;
+        padding: 2rem 24px;
     }
 }
 
 @media (max-width: 320px) {
     .sidebar-logo {
-        padding: 2rem 18px;
+        padding: 2rem 16.4px;
     }
 
     .title-coordenacao h4 {
