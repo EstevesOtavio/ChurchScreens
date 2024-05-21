@@ -286,6 +286,10 @@ a.sidebar-link {
     .title-coordenacao h4 {
         font-size: 1.28rem;
     }
+
+    .sidebar-logo {
+        padding: 2rem 30px;
+    }
 }
 
 @media (width: 344px) {
