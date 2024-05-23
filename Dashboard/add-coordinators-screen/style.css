@@ -81,6 +81,11 @@ a.sidebar-link {
     margin-top: 3px;
 }
 
+#categories-item i {
+    margin-right: 9.1px;
+    margin-left: -1px;
+}
+
 .sidebar-link[data-bs-toggle="collapse"]::after {
     border: solid;
     border-width: 0 .075rem .075rem 0;

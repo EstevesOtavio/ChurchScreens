@@ -131,14 +131,14 @@ a.sidebar-link {
 
 /* Turmas */
 
-.main-turmas {
+.main-categories {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1; /*Para ocupar todo espaço acima do footer*/
 }
 
-.turmas {
+.categories {
     width: 95%;
     padding: 0 3rem;
     margin-bottom: 1rem;
@@ -187,6 +187,10 @@ a.sidebar-link {
 
 .footer {
     width: 100%;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width: 912px), (width: 1024px) and (height: 1366px) {
