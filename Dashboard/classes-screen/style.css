@@ -189,6 +189,10 @@ a.sidebar-link {
     width: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (max-width: 912px), (width: 1024px) and (height: 1366px) {
     #sidebar {
         min-width: 40%;
@@ -205,8 +209,6 @@ a.sidebar-link {
     .footer {
         margin-top: 1.16rem;
     }
-
-    /* Active */
 
     .title-turmas {
         flex-direction: column;
@@ -240,6 +242,18 @@ a.sidebar-link {
     
     #sidebar {
         min-width: 70%;
+    }
+
+    #sidebar {
+        margin-right: 24px;
+    }
+
+    #sidebar.collapsed {
+        margin-left: -438px;
+    }
+
+    .turmas {
+        width: 90vw;
     }
 }
 

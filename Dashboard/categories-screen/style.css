@@ -77,7 +77,7 @@ a.sidebar-link {
     margin-top: 1px;
 }
 
-#turmas-item i {
+#categories-item i {
     margin-top: 3px;
 }
 
@@ -129,7 +129,7 @@ a.sidebar-link {
     margin-left: auto;
 }
 
-/* Turmas */
+/* categories */
 
 .main-categories {
     display: flex;
@@ -144,15 +144,15 @@ a.sidebar-link {
     margin-bottom: 1rem;
 }
 
-.title-turmas {
+.title-categories {
     display: flex;
     justify-content: space-between;
     width: 91.3%;
-    padding: 0 3rem;
+    padding: 0 1rem;
     margin-top: 1.68rem;
 }
 
-.title-turmas h3{
+.title-categories h3{
     font-size: 1.98rem;
 }
 
@@ -161,7 +161,7 @@ a.sidebar-link {
     padding: .5rem .7rem;
 }
 
-.card.turma {
+.card.category {
     height: 6.5rem;
     border-radius: 12px;
     margin: 1.49rem;
@@ -178,7 +178,7 @@ a.sidebar-link {
     background: #0d6efd;
 }
 
-.pagination-turmas {
+.pagination-categories {
     --bs-pagination-font-size: .92rem;
     margin-bottom: 0;
 }
@@ -198,11 +198,11 @@ a.sidebar-link {
         min-width: 40%;
     }
 
-    .col.card-turma {
+    .col.card-category {
         width: 100%;
     }
 
-    .pagination-turmas {
+    .pagination-categories {
         margin-bottom: 1rem;
     }
 
@@ -210,25 +210,23 @@ a.sidebar-link {
         margin-top: 1.16rem;
     }
 
-    /* Active */
-
-    .title-turmas {
+    .title-categories {
         flex-direction: column;
         align-items: center;
         width: 100%;
         padding: 0;
     }
 
-    .title-turmas button {
+    .title-categories button {
         width: 90%;
         margin-top: 1rem;
     }
 
-    .turmas {
+    .categories {
         padding: 0;
     }
 
-    .turmas .card {
+    .categories .card {
         margin: 1.49rem 0;
     }
 }
@@ -245,10 +243,26 @@ a.sidebar-link {
     #sidebar {
         min-width: 70%;
     }
+
+    #sidebar {
+        margin-right: 24px;
+    }
+
+    #sidebar.collapsed {
+        margin-left: -438px;
+    }
+
+    .title-categories {
+        text-align: center;
+    }
+
+    .categories {
+        width: 90vw;
+    }
 }
 
 @media (max-width: 414px) {
-    .title-turmas h3 {
+    .title-categories h3 {
         margin-left: 1rem;
     }
 }
