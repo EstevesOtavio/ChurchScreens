@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="white">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/86c6712e69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="sidebar" class="js-sidebar">
+        <!-- Content For Sidebar -->
+        <div class="sidebar-content">
+            <div class="sidebar-logo">
+                <a href="#">Paróquia Sant'Ana</a>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="##" id="alunos-item" class="sidebar-link active">
+                        <i class="fa-solid fa-user"></i>
+                        Alunos
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" id="coordenadores-item" class="sidebar-link">
+                        <i class="fa-solid fa-user-pen"></i>
+                        Coordenadores
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" id="turmas-item" class="sidebar-link">
+                        <i class="fa-solid fa-book"></i>
+                        Turmas
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" id="categories-item" class="sidebar-link">
+                        <i class="fa-solid fa-address-book"></i>
+                        Categorias
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="complete-main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+            <button class="btn" id="sidebar-toggle" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                            <img src="../image/bxs-user-circle.svg" class="avatar img-fluid rounded" alt="">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a href="#" class="dropdown-item">Perfil</a>
+                            <a href="#" class="dropdown-item">Configurações</a>
+                            <a href="#" class="dropdown-item">Sair</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <form class="main-perfil-student" id="main-perfilStudent">
+            <div class="card-perfil">
+                <div class="alert alert-success hidden" role="alert">
+                    Aluno Alerado com Sucesso!
+                </div>
+                <div class="alert alert-danger hidden" role="alert">
+                    Falha ao Alterar Aluno :(
+                </div>
+                <h5 class="card-title">Dados do Aluno</h5>
+                <div class="row row-perfil">
+                    <div class="col">
+                        <label for="NomeCompleto" class="legenda">Nome Completo</label>
+                        <input type="text" class="form-control" id="NomeCompleto" placeholder="Nome Completo"
+                            aria-label="Nome Completo">
+                        <label for="Padrinho" class="legenda">Padrinho</label>
+                        <input type="text" class="form-control" id="Padrinho" placeholder="Padrinho"
+                            aria-label="Padrinho">
+                        <label for="Email" class="legenda">Email</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email"
+                            aria-label="Email" autocomplete="on">
+                    </div>
+                    <div class="col">
+                        <label for="Documento" class="legenda">Documento RG/CN</label>
+                        <input type="text" class="form-control" id="Documento" placeholder="Documento"
+                            aria-label="Documento">
+                        <label for="Madrinha" class="legenda">Madrinha</label>
+                        <input type="text" class="form-control" id="Madrinha" placeholder="Madrinha"
+                            aria-label="Madrinha">
+                        <label for="Telefone" class="legenda">Telefone</label>
+                        <input type="text" class="form-control" id="Telefone" placeholder="Telefone"
+                            aria-label="Telefone">
+                    </div>
+                </div>
+                <div class="row row-perfil">
+                    <div class="col">
+                        <label for="Obervacao" class="legenda">Observações</label>
+                        <textarea class="form-control" id="Obervacao" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="..." class="nav-bottom-perfil">
+                <div class="first-btn-perfil">
+                    <button type="button" class="btn btn-primary">Documento</button>
+                </div>
+                <div class="second-btn-perfil">
+                    <button type="button" class="btn btn-danger">Cancelar <i class="fa-solid fa-ban"></i></button>
+                    <button type="button" class="btn btn-success btn-add-editar">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
+                    <button type="button" class="btn btn-danger hidden">Deletar <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn btn-success btn-add-editar hidden">Editar <i class="fa-solid fa-pen"></i></button>
+                </div>
+            </nav>
+        </form>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row text-muted">
+                    <div class="col-6 text-start">
+                        <p class="mb-0">
+                            <a href="#" class="text-muted">
+                                <strong>Paróquia Sant'Ana</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-6 text-end">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
