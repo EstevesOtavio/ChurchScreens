@@ -68,7 +68,13 @@
         </nav>
         <form class="main-perfil-coordenador" id="main-perfilCoordenador">
             <div class="card-perfil">
-                <h5 class="card-title">Dados do Cordenador</h5>
+                <div class="alert alert-success hidden" role="alert">
+                    Coordenador Alerado com Sucesso!
+                </div>
+                <div class="alert alert-danger hidden" role="alert">
+                    Falha ao Alterar Coordenador :(
+                </div>
+                <h5 class="card-title">Dados do Coordenador</h5>
                 <div class="row row-perfil">
                     <div class="col">
                         <label for="NomeCompleto" class="legenda">Nome Completo</label>
@@ -101,6 +107,8 @@
                 <div class="second-btn-perfil">
                     <button type="button" class="btn btn-danger">Cancelar <i class="fa-solid fa-ban"></i></button>
                     <button type="button" class="btn btn-success btn-add-editar">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
+                    <button type="button" class="btn btn-danger hidden">Deletar <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn btn-success btn-add-editar hidden">Editar <i class="fa-solid fa-pen"></i></button>
                 </div>
             </nav>
         </form>

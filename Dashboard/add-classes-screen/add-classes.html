@@ -66,8 +66,14 @@
                 </ul>
             </div>
         </nav>
-        <main class="main-add-turma hidden show" id="main-addTurma">
+        <main class="main-add-turma" id="main-addTurma">
             <div class="card-addturma">
+                <div class="alert alert-success hidden" role="alert">
+                    Turma Alerada com Sucesso!
+                </div>
+                <div class="alert alert-danger hidden" role="alert">
+                    Falha ao Alterar Turma :(
+                </div>
                 <h5 class="card-title">Dados da Turma</h5>
                 <div class="row row-perfil">
                     <div class="col">
@@ -104,6 +110,8 @@
                 <div class="btn-group-add-turma">
                     <button type="button" class="btn btn-danger">Cancelar <i class="fa-solid fa-ban"></i></button>
                     <button type="button" class="btn btn-success btn-add-turma">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
+                    <button type="button" class="btn btn-danger hidden">Deletar <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn btn-success btn-add-editar hidden">Editar <i class="fa-solid fa-pen"></i></button>
                 </div>
             </nav>
         </main>

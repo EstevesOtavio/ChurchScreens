@@ -175,7 +175,7 @@ h5.card-title {
 .nav-bottom-category {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     padding: 10px;
     margin-bottom: 1rem;
 }
@@ -185,6 +185,10 @@ h5.card-title {
 .footer {
     margin-top: 1.16rem;
     width: 100%;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (width: 820px) and (height: 1180px), (width: 853px) and (height: 1280px) {

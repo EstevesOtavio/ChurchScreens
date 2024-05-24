@@ -194,8 +194,8 @@ h5.card-title {
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    
+.hidden {
+    display: none;
 }
 
 @media (width: 540px) and (height: 720px) {

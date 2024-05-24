@@ -68,6 +68,12 @@
         </nav>
         <form class="main-add-category" id="main-addCategory">
             <div class="card-category">
+                <div class="alert alert-success hidden" role="alert">
+                    Categoria Alerada com Sucesso!
+                </div>
+                <div class="alert alert-danger hidden" role="alert">
+                    Falha ao Alterar Categoria :(
+                </div>
                 <h5 class="card-title">Dados da Categoria</h5>
                 <div class="row row-category">
                     <div class="col">
@@ -87,8 +93,10 @@
             </div>
             <nav aria-label="..." class="nav-bottom-category">
                 <div class="second-btn-category">
-                    <button type="button" class="btn btn-danger hidden">Cancelar <i class="fa-solid fa-ban"></i></button>
-                    <button type="button" class="btn btn-success btn-add-editar hidden">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
+                    <button type="button" class="btn btn-danger">Cancelar <i class="fa-solid fa-ban"></i></button>
+                    <button type="button" class="btn btn-success btn-add-editar">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
+                    <button type="button" class="btn btn-danger hidden">Deletar <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn btn-success btn-add-editar hidden">Editar <i class="fa-solid fa-pen"></i></button>
                 </div>
             </nav>
         </form>

@@ -187,6 +187,10 @@ h5.card-title {
     width: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (width: 820px) and (height: 1180px), (width: 853px) and (height: 1280px) {
     .row-perfil {
         flex-direction: column;
