@@ -49,3 +49,11 @@ input[type="file"] {
     border-radius: 15px;
     padding: .375rem .75rem; 
 }
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
