@@ -4,8 +4,21 @@
     flex: 1; /*Para ocupar todo espaço acima do footer*/
 }
 
+.lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-list {
+    width: 49%;
+}
+
 .container-search-list {
     margin-bottom: 1rem;
+}
+
+.searchs {
+    display: flex;
 }
 
 .search-list button {
