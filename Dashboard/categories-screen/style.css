@@ -52,16 +52,6 @@
     margin-bottom: 0;
 }
 
-/* Footer */
-
-.footer {
-    width: 100%;
-}
-
-.hidden {
-    display: none;
-}
-
 @media (max-width: 912px), (width: 1024px) and (height: 1366px) {
     #sidebar {
         min-width: 40%;

@@ -68,17 +68,6 @@ h5.card-title {
     margin-bottom: 1rem;
 }
 
-/* Footer */
-
-.footer {
-    margin-top: 1.16rem;
-    width: 100%;
-}
-
-.hidden {
-    display: none;
-}
-
 @media (width: 820px) and (height: 1180px), (width: 853px) and (height: 1280px) {
     .row-category {
         flex-direction: column;

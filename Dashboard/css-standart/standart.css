@@ -128,3 +128,16 @@ a.sidebar-link {
 .navbar-expand .navbar-nav {
     margin-left: auto;
 }
+
+/* Footer */
+
+.footer {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+/* Hidden */
+
+.hidden {
+    display: none;
+}

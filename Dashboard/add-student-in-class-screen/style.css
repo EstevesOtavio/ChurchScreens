@@ -69,13 +69,6 @@
     margin: 0;
 }
 
-/* Footer */
-
-.footer {
-    margin-top: 1.16rem;
-    width: 100%;
-}
-
 @media (max-width: 768px) {
     #sidebar {
         min-width: 40%;

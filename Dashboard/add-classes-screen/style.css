@@ -56,17 +56,6 @@ h5.card-title {
     margin-top: 2px;
 }
 
-/* Footer */
-
-.footer {
-    margin-top: 3rem;
-    width: 100%;
-}
-
-.hidden {
-    display: none;
-}
-
 @media (width: 540px) and (height: 720px) {
     html {
         overflow: scroll;
