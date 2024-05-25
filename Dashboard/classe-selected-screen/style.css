@@ -45,7 +45,7 @@
     padding: 1rem;
 }
 
-.btn-success, .btn-primary {
+.nav-bottom .btn {
     font-size: .9rem;
     padding: .50rem .70rem;
     margin: 0;
@@ -56,6 +56,12 @@
     margin: 0;
 }
 
+@media (width: 1024px) {
+    .nav-bottom .btn {
+        margin-top: 3px;
+    }
+}
+
 @media (max-width:912px) {
     #sidebar {
         min-width: 40%;
@@ -63,13 +69,22 @@
 
     .nav-bottom {
         flex-direction: column-reverse;
+        padding: 1rem 0;
     }
 
     .group-buttons {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 1rem;
+    }
+
+    .group-buttons {
+        flex-direction: column;
+    }
+
+    .nav-bottom .btn {
+        margin-top: .8rem;
+        width: 100%;
+        border-radius: 12px;
+        font-size: 1rem;
     }
 }
 
@@ -86,7 +101,7 @@
         min-width: 50%;
     }
 
-    .main-list-screen-coordenadores {
+    .main-list-screen-students {
         width: 100vw;
     }
 }
@@ -121,7 +136,7 @@
         flex-direction: column;
     }
 
-    .btn-success, .btn-primary {
+    .btn-success, .btn-primary, .btn-danger {
         margin-top: .8rem;
         width: 100%;
         border-radius: 12px;
