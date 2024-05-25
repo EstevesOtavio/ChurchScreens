@@ -53,7 +53,7 @@
 .nav-bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     padding: 1rem;
 }
@@ -69,13 +69,17 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #sidebar {
         min-width: 40%;
     }
 
-    #sidebar.collapsed {
-        margin-left: -54%;
+    .lists {
+        flex-direction: column-reverse;
+    }
+
+    .container-list {
+        width: 100%;
     }
 
     .nav-bottom {
@@ -144,9 +148,9 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
     .title-coordenacao h4 {
-        font-size: 1.3rem;
+        font-size: 1.27rem;
     }
 
     .search-list {
@@ -163,12 +167,12 @@
 }
 
 @media (width: 360px) and (height: 740px) {
-    .title-coordenacao {
-        width: 88vw;
+    .title-coordenacao h4 {
+        font-size: 1.21rem;
     }
 
-    .title-coordenacao h4 {
-        font-size: 1.28rem;
+    .list-title {
+        font-size: 1.15rem;
     }
 
     .sidebar-logo {
@@ -177,6 +181,14 @@
 }
 
 @media (width: 344px) {
+    .title-coordenacao h4 {
+        font-size: 1.15rem;
+    }
+
+    .list-title {
+        font-size: 1.1rem;
+    }
+
     .sidebar-logo {
         padding: 2rem 24px;
     }
@@ -188,10 +200,10 @@
     }
 
     .title-coordenacao h4 {
-        font-size: 1.5rem;
+        font-size: 1.05rem;
     }
 
     .list-title {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }

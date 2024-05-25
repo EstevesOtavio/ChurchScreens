@@ -49,23 +49,31 @@ h5.card-title {
     margin-bottom: 1rem;
 }
 
-@media (width: 820px) and (height: 1180px), (width: 853px) and (height: 1280px) {
-    .row-perfil {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 912px) {
     #sidebar {
         min-width: 40%;
     }
 
-    #sidebar.collapsed {
-        margin-left: -54%;
+    .nav-bottom-perfil {
+        flex-direction: column;
     }
 
-    .nav-bottom-perfil {
-        width: 84.4%;
+    .second-btn-perfil {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-danger {
+        width: 49%;
+    }
+
+    .btn-success {
+        width: 49%;
+    }
+
+    .btn-primary, .whatsapp-btn {
+        width: 100%;
+        margin-bottom: .5rem;
     }
 
     .row-perfil {
@@ -84,10 +92,6 @@ h5.card-title {
     .legenda {
         margin-left: 0;
         margin-right: 0;
-    }
-
-    .btn-primary {
-        margin-right: .7px;
     }
 }
 
@@ -142,11 +146,6 @@ h5.card-title {
         flex-direction: column;
     }
 
-    .btn-primary {
-        width: 100%;
-        margin-bottom: .5rem;
-    }
-
     .second-btn-perfil {
         display: flex;
         justify-content: space-between;
@@ -158,6 +157,11 @@ h5.card-title {
 
     .btn-success {
         width: 49%;
+    }
+
+    .btn-primary, .whatsapp-btn {
+        width: 100%;
+        margin-bottom: .5rem;
     }
 }
 
