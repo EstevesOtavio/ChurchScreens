@@ -139,6 +139,10 @@
     .title-inicio h3 {
         font-size: 2rem;
     }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
 }
 
 @media (width: 360px) {
@@ -171,6 +175,6 @@
     }
 
     .card-title {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 }
