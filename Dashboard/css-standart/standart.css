@@ -68,6 +68,10 @@ a.sidebar-link {
     font-size: 1.39rem;
 }
 
+#incio-item i {
+    margin-right: 7px;
+}
+
 #alunos-item i {
     margin-top: 4px;
 }

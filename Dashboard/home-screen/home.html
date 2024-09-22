@@ -21,7 +21,7 @@
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="##" id="incio-item" class="sidebar-link">
+                    <a href="##" id="incio-item" class="sidebar-link active">
                         <i class="fa-solid fa-house"></i>
                         Início
                     </a>
@@ -45,7 +45,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" id="categories-item" class="sidebar-link active">
+                    <a href="#" id="categories-item" class="sidebar-link">
                         <i class="fa-solid fa-address-book"></i>
                         Categorias
                     </a>
@@ -73,42 +73,39 @@
                 </ul>
             </div>
         </nav>
-        <form class="main-add-category" id="main-addCategory">
-            <div class="card-category">
-                <div class="alert alert-success hidden" role="alert">
-                    Categoria Alerada com Sucesso!
+        <main id="inicio-screen" class="container-fluid main-inicio">
+            <div class="title-inicio">
+                <h3 class="mb-0">Informações Gerais</h3>
+            </div>
+            <div class="row row-cols-2 inicio-cards">
+                <div class="col card-inicio">
+                    <a href="#" class="card inicio mb-3">
+                        <h5 class="card-title m-0">Catequisados: N</h5>
+                        <div class="card-color"></div>
+                    </a>
                 </div>
-                <div class="alert alert-danger hidden" role="alert">
-                    Falha ao Alterar Categoria :(
+                <div class="col card-inicio">
+                    <a href="#" class="card inicio mb-3">
+                        <h5 class="card-title m-0">Catequistas: N</h5>
+                        <div class="card-color"></div>
+                    </a>
                 </div>
-                <h5 class="card-title">Dados da Categoria</h5>
-                <div class="row row-category">
-                    <div class="col">
-                        <label for="NomeCategoria" class="legenda">Nome da Categoria</label>
-                        <input type="text" class="form-control" id="NomeCategoria" placeholder="Nome"
-                            aria-label="Nome Categoria">
-                        <label for="Descricao" class="legenda">Descrição da Categoria</label>
-                        <input type="text" class="form-control" id="Descricao" placeholder="Descrição"
-                            aria-label="Descricao">
-                        <label for="Descricao" class="legenda">Status da Categoria</label>
-                        <select id="status" class="form-select legenda" aria-label="Default select example">
-                            <option value="1">Ativa</option>
-                            <option value="2">Inativa</option>
-                        </select>
-                    </div>
+                <div class="col card-inicio">
+                    <a href="#" class="card inicio mb-3">
+                        <h5 class="card-title m-0">Turmas: N</h5>
+                        <div class="card-color"></div>
+                    </a>
+                </div>
+                <div class="col card-inicio">
+                    <a href="#" class="card inicio mb-3">
+                        <h5 class="card-title m-0">Pendentes: N</h5>
+                        <div class="card-color"></div>
+                    </a>
                 </div>
             </div>
-            <nav aria-label="..." class="nav-bottom-category">
-                <div class="second-btn-category">
-                    <button type="button" class="btn btn-danger">Cancelar <i class="fa-solid fa-ban"></i></button>
-                    <button type="button" class="btn btn-success btn-add-editar">Adicionar <i class="fa-solid fa-circle-plus"></i></button>
-                    <button type="button" class="btn btn-danger hidden">Deletar <i class="fa-solid fa-trash-can"></i></button>
-                    <button type="button" class="btn btn-success btn-add-editar hidden">Editar <i class="fa-solid fa-pen"></i></button>
-                </div>
-            </nav>
-        </form>
+        </main>
         <footer class="footer">
-            <div class="container-fluid">
+            <div class=" container-fluid">
                 <div class="row text-muted">
                     <div class="col-6 text-start">
                         <p class="mb-0">

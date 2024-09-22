@@ -1,19 +1,19 @@
 /* Turmas */
 
-.main-turmas {
+.main-inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1; /*Para ocupar todo espaço acima do footer*/
 }
 
-.turmas {
+.inicio-cards {
     width: 95%;
     padding: 0 3rem;
     margin-bottom: 1rem;
 }
 
-.title-turmas {
+.title-inicio {
     display: flex;
     justify-content: space-between;
     width: 91.3%;
@@ -21,7 +21,7 @@
     margin-top: 1.68rem;
 }
 
-.title-turmas h3{
+.title-inicio h3{
     font-size: 1.98rem;
 }
 
@@ -30,14 +30,15 @@
     padding: .5rem .7rem;
 }
 
-.card.turma {
+.card.inicio {
     /* height: 6.5rem; */
     border-radius: 12px;
     margin: 1.49rem;
 }
 
 .card-title {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
+    font-weight: 100;
     margin: .7rem !important;
 }
 
@@ -47,45 +48,37 @@
     background: #0d6efd;
 }
 
-.pagination-turmas {
-    --bs-pagination-font-size: .92rem;
-    margin-bottom: 0;
+@media (width:1280px) and (height: 800px) {
+    .title-inicio {
+        margin-left: 1.6rem;
+    }
 }
 
-@media (max-width: 912px), (width: 1024px) and (height: 1366px) {
+@media (max-width: 1024px), (width: 1024px) and (height: 1366px) {
     #sidebar {
         min-width: 40%;
     }
 
-    .col.card-turma {
+    .col.card-inicio {
         width: 100%;
-    }
-
-    .pagination-turmas {
-        margin-bottom: 1rem;
     }
 
     .footer {
         margin-top: 1.16rem;
     }
 
-    .title-turmas {
+    .title-inicio {
         flex-direction: column;
         align-items: center;
         width: 100%;
         padding: 0;
     }
 
-    .title-turmas button {
-        width: 90%;
-        margin-top: 1rem;
-    }
-
-    .turmas {
+    .inicio-cards {
         padding: 0;
     }
 
-    .turmas .card {
+    .inicio-cards .card {
         margin: 1.49rem 0;
     }
 }
@@ -111,14 +104,40 @@
         margin-left: -438px;
     }
 
-    .turmas {
+    .inicio-cards {
         width: 90vw;
     }
 }
 
-@media (max-width: 414px) {
-    .title-turmas h3 {
-        margin-left: 1rem;
+@media (width: 540px) {
+    html {
+        overflow: scroll;
+    }
+    
+    body {
+        overflow-y: scroll;
+    }
+    
+    #sidebar {
+        min-width: 50%;
+    }
+
+    #sidebar {
+        margin-right: 24px;
+    }
+
+    #sidebar.collapsed {
+        margin-left: -438px;
+    }
+
+    .inicio-cards {
+        width: 90vw;
+    }
+}
+
+@media (width: 375px) {
+    .title-inicio h3 {
+        font-size: 2rem;
     }
 }
 
@@ -126,16 +145,32 @@
     .sidebar-logo {
         padding: 2rem 30px;
     }
+
+    .card-title{
+        font-size: 1.7rem;
+    }
 }
 
 @media (width: 344px) {
     .sidebar-logo {
         padding: 2rem 24px;
     }
+
+    .card-title {
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: 320px) {
+    .title-inicio h3{
+        font-size: 1.8rem;
+    }
+
     .sidebar-logo {
         padding: 2rem 16.4px;
+    }
+
+    .card-title {
+        font-size: 1.7rem;
     }
 }
