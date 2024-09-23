@@ -54,7 +54,32 @@
     }
 }
 
-@media (max-width: 1024px), (width: 1024px) and (height: 1366px) {
+@media (max-width: 1024px) {
+    .col.card-inicio {
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: 1.16rem;
+    }
+
+    .title-inicio {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .inicio-cards {
+        padding: 0;
+    }
+
+    .inicio-cards .card {
+        margin: 1.49rem 0;
+    }
+}
+
+@media (max-width: 912px), (width: 1024px) and (height: 1366px) {
     #sidebar {
         min-width: 40%;
     }

@@ -10,7 +10,6 @@ function executarTarefaPorTamanhoTela() {
       if (e.matches) {
         document.querySelector("#sidebar").classList.toggle("collapsed");
         console.log("A largura da tela é menor ou igual a 768px. Executando tarefa...");
-        // Aqui você pode colocar a tarefa que deseja executar
       } else {
         console.log("A largura da tela é maior que 768px.");
       }
